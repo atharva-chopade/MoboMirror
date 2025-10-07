@@ -2,6 +2,8 @@
 
 This is a Qt6 GUI application for mirroring iPhone screens over USB and wireless connections.
 
+![MoboMirror Screenshot](screenshot.png)
+
 ## Features
 
 - **USB Mirroring**: High-quality screen mirroring via direct USB connection
