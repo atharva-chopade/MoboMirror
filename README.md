@@ -16,6 +16,8 @@ Release 0.6
 
 This is an Operating System indepedent implementation for Quicktime Screensharing for iOS devices :-)
 
+**NEW: Qt GUI Application!** 🎉 We now have a user-friendly Qt application that provides a graphical interface for mirroring iPhone screens. See the [qt-app directory](qt-app/) for details.
+
 [Check out my presentation](https://danielpaulus.github.io/quicktime_video_hack_presentation)
 
 [See me talk about it at GoWayFest](https://www.youtube.com/watch?v=jghi4nCBRwc)
@@ -25,11 +27,16 @@ This is an Operating System indepedent implementation for Quicktime Screensharin
 This repository contains all the code you will need to grab and record video and audio from one or more iPhone(s) or iPad(s)
 without needing one of these expensive MacOS X computers or the hard to use QuickTime Player :-D
 
+- You can use the **Qt GUI application** for easy point-and-click mirroring (USB and wireless support)
 - You can record video and audio as raw h264 and wave audio in the Apple demonstration mode (Device shows 9:41am, full battery and no cellphone carrier in the status bar)
 - Also you can just grab device audio as wave, ogg or mp3 without the Apple demonstration mode now 🎉
 - You can use custom Gstreamer Pipelines to transcode the AV data into whatever you like
 
 ## 2. Installation
+
+**Quick Start**: See [QUICKSTART.md](QUICKSTART.md) for a 5-minute setup guide!
+
+**Detailed Installation**: See [INSTALL.md](INSTALL.md) for comprehensive installation instructions.
 
 ### 2.1 Mac OSX
 
@@ -45,6 +52,21 @@ without needing one of these expensive MacOS X computers or the hard to use Quic
 3. Git clone the repo and start hacking or download the latest release and run the binary :-D
 
 ## 3. Usage
+
+### Option 1: Qt GUI Application (Recommended for Desktop Users)
+
+For a user-friendly graphical interface:
+
+```bash
+cd qt-app
+./build.sh
+cd build
+./MoboMirror
+```
+
+See [qt-app/README.md](qt-app/README.md) for detailed instructions.
+
+### Option 2: Command Line Interface
 
 - For just displaying the screen run `qvh gstreamer` and it will work.
 - For just getting raw media output without Gstreamer involved use `qvh record out.h264 out.wav` or `qvh audio out.wav --wav` for audio only
