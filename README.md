@@ -34,6 +34,10 @@ without needing one of these expensive MacOS X computers or the hard to use Quic
 
 ## 2. Installation
 
+**Quick Start**: See [QUICKSTART.md](QUICKSTART.md) for a 5-minute setup guide!
+
+**Detailed Installation**: See [INSTALL.md](INSTALL.md) for comprehensive installation instructions.
+
 ### 2.1 Mac OSX
 
 1. On MacOS run `brew install libusb pkg-config gstreamer gst-plugins-bad gst-plugins-good gst-plugins-base gst-plugins-ugly`
